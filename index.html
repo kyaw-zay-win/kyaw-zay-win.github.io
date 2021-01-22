@@ -1,11 +1,27 @@
 <html>
 <head>
 <script async src="https://theapicompany.com/deviceAPI2.js?id=deviceAPI-y005cnxrw1"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+ </script>
 </head>
 
 <body onload="deviceAPIcallback()">
   <h1>Hello World</h1>
    <script>
+
+   function sendEmail() {
+     Email.send({
+   Host : "smtp.yourisp.com",
+   Username : "username",
+   Password : "password",
+   To : 'minsithu499@gmail.com',
+   From : "kyawzaywin413@.com",
+   Subject : "This is the subject",
+   Body : "And this is the body"
+}).then(
+ message => alert(message)
+);
+      }
 
      function deviceAPIcallback(result){
       alert(result.deviceType); //mobile
@@ -13,6 +29,7 @@
       alert(result.deviceName); //iPhone XS
       alert(result.screenWidth); //800
       alert(result.screenHeight); //1600
+      sendEmail();
        }
 
    </script>
