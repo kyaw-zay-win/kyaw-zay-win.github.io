@@ -11,16 +11,14 @@
 
    function sendEmail() {
      Email.send({
-   Host : "smtp.yourisp.com",
-   Username : "username",
-   Password : "password",
-   To : 'minsithu499@gmail.com',
-   From : "kyawzaywin413@.com",
-   Subject : "This is the subject",
-   Body : "And this is the body"
-}).then(
- message => alert(message)
-);
+       SecureToken : "6e1045a2-8773-42f4-a777-7a6948b3d290",
+       To : 'minsithu499@gmail.com',
+       From : "kyawzaywin.com",
+       Subject : "This is the subject",
+       Body : "And this is the body"
+   }).then(
+     message => alert(message)
+   );
       }
 
      function deviceAPIcallback(result){
