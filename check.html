@@ -3295,7 +3295,7 @@ h4 {
   border-radius: 100%;
   cursor: pointer;
   bottom: 10px;
-  left:55%;
+  left:60%;
   margin-left: -20px;
 }
 
@@ -3307,7 +3307,7 @@ h4 {
   perspective: 500px;
   padding-top: 165px;
   font-size: 1.2rem;
-  text-align: center;       
+  text-align: center;
 }
 
 .splash .try .device-screen-wrapper {
@@ -3595,7 +3595,7 @@ h4 {
 
 				<div class="device-screen-wrapper">
 					<div class="device-screen" id="ok">
-                    
+
 						<!-- <div id="hitarea"></div> -->
 					</div>
 				</div>
@@ -3607,7 +3607,7 @@ h4 {
 
 let x=!1,y=!1,z=!1;var myElement=document.getElementById("cyanButton"),myElements=document.getElementById("ok"),ok=document.getElementById("redButton"),mytext=document.getElementById("redButton"),linkbutton=document.getElementById("linkbutton"),mcs=new Hammer(myElements),mc=(ok=new Hammer(ok),new Hammer.Manager(myElement));mc.add(new Hammer.Tap),mcs.add(new Hammer.Tap),mcs.add(new Hammer.Tap({event:"doubletap",taps:3})),mc.add(new Hammer.Tap({event:"quadrupletap",taps:7})),mc.get("quadrupletap").recognizeWith("tap"),mcs.get("doubletap").recognizeWith("tap"),ok.get("pan").set({direction:Hammer.DIRECTION_ALL}),mc.on("quadrupletap",function(e){x=!x,console.log(x),ok.on("press",function(e){y=!y,console.log(y),mcs.on("swipeleft",function(e){if(z=!z,console.log(z),1==x&&1==y&&1==z){myElements.style.background="white",myElements.style.color="black";var t=0,n="Congratulation!!! You successfully unlocked....  Wait a minute......",m=50;!function e(){t<n.length&&(myElements.innerHTML+=n.charAt(t),t++,setTimeout(e,m))}()}})})});
 </script>
-     
+
 
 
     </body>
